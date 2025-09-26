@@ -50,7 +50,7 @@
                     "default": "eth_chainId"
                   },
                   "params": {
-                    "type": "object",
+                    "type": "prefixed-array",
                     "default": ["latest", true]
                   }
                 }
