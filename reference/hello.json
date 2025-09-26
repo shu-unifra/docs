@@ -19,6 +19,42 @@
     }
   ],
   "paths": {
+    "/test": {
+      "post": {
+        "summary": "Test Tuple Input",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "params": {
+                    "type": "array",
+                    "description": "First item string, second item boolean",
+                    "items": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "boolean"
+                      }
+                    ],
+                    "minItems": 2,
+                    "maxItems": 2
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/{your-api-key}": {
       "post": {
         "summary": "Generic RPC method call",
