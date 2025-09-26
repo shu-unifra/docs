@@ -56,10 +56,14 @@
                     ],
                     "prefixItems": [
                       {
-                        "type": "string"
+                        "type": "string",
+                        "example": "latest",
+                        "default": "latest"
                       },
                       {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "example": true,
+                        "default": true
                       }
                     ],
                     "minItems": 2,
