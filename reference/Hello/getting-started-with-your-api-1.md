@@ -1,7 +1,9 @@
 ---
-title: Getting Started With Your API
-
-excerpt: This page will help you get started with Foo.
+title: debug_traceBlockByNumber
+excerpt: ''
+api:
+  file: dogeos-api.json
+  operationId: debug_traceBlockByNumber
 deprecated: false
 hidden: false
 metadata:

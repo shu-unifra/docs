@@ -1,4 +1,10 @@
 {
+  "x-readme": {
+    "headers": [],
+    "explorer-enabled": true,
+    "proxy-enabled": true
+  },
+  "x-readme-fauxas": true,
   "openapi": "3.0.0",
   "info": {
     "version": "1.0.0",
@@ -16,7 +22,7 @@
     "/{your-api-key}": {
       "post": {
         "summary": "summary",
-        "operationId": "operation1",
+        "operationId": "debug_traceBlockByNumber",
         "tags": ["pets"],
         "requestBody": {
           "content": {

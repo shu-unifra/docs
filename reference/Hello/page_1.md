@@ -1,9 +1,9 @@
 ---
-title: Page1 title
+title: debug_traceBlockByNumber
+excerpt: ''
 api:
-  file: hello.json
-  operationId: operation1
-excerpt: "excerpt"
+  file: dogeos-api.json
+  operationId: debug_traceBlockByNumber
 deprecated: false
 hidden: false
 metadata:
