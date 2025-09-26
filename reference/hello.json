@@ -51,8 +51,17 @@
                   },
                   "params": {
                     "type": "array",
-                    "default":[
-                        
+                    "default": [
+                      {
+                        "type": "string",
+                        "example": "latest",
+                        "default": "latest"
+                      },
+                      {
+                        "type": "boolean",
+                        "example": true,
+                        "default": true
+                      }
                     ],
                     "prefixItems": [
                       {
