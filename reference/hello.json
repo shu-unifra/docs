@@ -51,23 +51,19 @@
                   },
                   "params": {
                     "type": "array",
-                    "default": [
-                      "latest", true
-                    ],
-                    "prefixItems": [
+                    "items": [
                       {
                         "type": "string",
-                        "example": "latest",
-                        "default": "latest"
+                        "example": "latest"
                       },
                       {
                         "type": "boolean",
-                        "example": true,
-                        "default": true
+                        "example": true
                       }
                     ],
                     "minItems": 2,
-                    "maxItems": 2
+                    "maxItems": 2,
+                    "default": ["latest", true]
                   }
                 }
               }
