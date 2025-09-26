@@ -50,19 +50,7 @@
                     "default": "eth_chainId"
                   },
                   "params": {
-                    "type": "array",
-                    "prefixItems": [
-                      {
-                        "type": "string",
-                        "description": "区块号或标签 (\"latest\", \"earliest\", \"pending\", or a hex number)",
-                        "example": "latest"
-                      },
-                      {
-                        "type": "boolean",
-                        "description": "是否返回完整的交易对象",
-                        "example": true
-                      }
-                    ]
+                    "$ref": "#/components/schemas/Pet"
                   }
                 }
               }
@@ -71,8 +59,11 @@
           "required": true
         },
         "responses": {
-          "201": {
-            "description": "Null response"
+          "200": {
+            "description": "Successful RPC response"
+          },
+          "204": {
+            "description": "Request successful, no content to return."
           },
           "default": {
             "description": "unexpected error",
@@ -106,13 +97,6 @@
         ],
         "minItems": 2,
         "maxItems": 2
-      },
-      "Pets": {
-        "type": "array",
-        "maxItems": 100,
-        "items": {
-          "$ref": "#/components/schemas/Pet"
-        }
       },
       "Error": {
         "type": "object",
