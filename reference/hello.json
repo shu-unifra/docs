@@ -20,7 +20,7 @@
   ],
   "paths": {
     
-    "/test": {
+    "/{your-api-key} ": {
       "post": {
         "operationId": "a222",
         "summary": "Test Tuple Input",
