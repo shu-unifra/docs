@@ -86,13 +86,15 @@
         "prefixItems": [
           {
             "type": "string",
-            "description": "区块号或标签 (\"latest\", \"earliest\", \"pending\", or a hex number)",
-            "example": "latest"
+            "description": "(\"latest\", \"earliest\", \"pending\", or a hex number)",
+            "example": "latest",
+            "default": "latest"
           },
           {
             "type": "boolean",
-            "description": "是否返回完整的交易对象",
-            "example": true
+            "description": "",
+            "example": true,
+            "default": true
           }
         ],
         "minItems": 2,
