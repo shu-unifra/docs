@@ -50,7 +50,12 @@
                     "default": "eth_chainId"
                   },
                   "params": {
-                    "$ref": "#/components/schemas/Pet"
+                    "$ref": "#/components/schemas/Pet",
+                   
+                    "example":[
+                        "latest",
+                        true
+                    ]
                   }
                 }
               }
