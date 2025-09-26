@@ -2,7 +2,7 @@
 title: debug_traceBlockByNumber
 excerpt: ''
 api:
-  file: dogeos-api.json
+  file: hello.json
   operationId: debug_traceBlockByNumber
 deprecated: false
 hidden: false
@@ -13,12 +13,4 @@ metadata:
 next:
   description: ''
 ---
-This is where you show your users how to set it up. You can use code samples, like this:
-
-```javascript
-$http.post('/someUrl', data).success(successCallback);
-
-alert('test');
-```
-
-Try dragging a block from the right to see how easy it is to add more content!
+hello....
