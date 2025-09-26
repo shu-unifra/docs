@@ -23,9 +23,7 @@
       "post": {
         "summary": "Generic RPC method call",
         "operationId": "rpcMethodCall",
-        "tags": [
-          "pets"
-        ],
+        "tags": ["pets"],
         "parameters": [
           {
             "name": "your-api-key",
@@ -52,7 +50,19 @@
                     "default": "eth_chainId"
                   },
                   "params": {
-                    "$ref": "#/components/schemas/Pet"
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "type": "string",
+                        "description": "区块号或标签 (\"latest\", \"earliest\", \"pending\", or a hex number)",
+                        "example": "latest"
+                      },
+                      {
+                        "type": "boolean",
+                        "description": "是否返回完整的交易对象",
+                        "example": true
+                      }
+                    ]
                   }
                 }
               }
@@ -106,10 +116,7 @@
       },
       "Error": {
         "type": "object",
-        "required": [
-          "code",
-          "message"
-        ],
+        "required": ["code", "message"],
         "properties": {
           "code": {
             "type": "integer",
