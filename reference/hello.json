@@ -51,23 +51,6 @@
                   },
                   "params": {
                     "type": "array",
-                    "prefixItems": [
-                      {
-                        "type": "string",
-                        "description": "(\"latest\", \"earliest\", \"pending\", or a hex number)",
-                        "example": "latest",
-                        "default": "latest"
-                      },
-                      {
-                        "type": "boolean",
-                        "description": "",
-                        "example": true,
-                        "default": true
-                      }
-                    ],
-                    "minItems": 2,
-                    "maxItems": 2,
-
                     "default": ["latest", true]
                   }
                 }
