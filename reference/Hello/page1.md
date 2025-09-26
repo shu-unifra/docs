@@ -1,5 +1,5 @@
 ---
-title: Generic RPC method call
+title: a111
 api:
   file: hello.json
   operationId: a111
