@@ -5,7 +5,7 @@
     "proxy-enabled": true
   },
   "x-readme-fauxas": true,
-  "openapi": "3.0.0",
+  "openapi": "3.1.0",
   "info": {
     "version": "1.0.0",
     "title": "Swagger Petstore",
@@ -21,23 +21,35 @@
   "paths": {
     "/{your-api-key}": {
       "post": {
-        "summary": "summary",
-        "operationId": "debug_traceBlockByNumber",
+        "summary": "Generic RPC method call",
+        "operationId": "rpcMethodCall",
         "tags": ["pets"],
+        "parameters": [
+          {
+            "name": "your-api-key",
+            "in": "path",
+            "required": true,
+            "description": "Your personal API key for authentication.",
+            "schema": { "type": "string" }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "id": {
-                  "type": "string",
-                  "default": "54321"
-                },
-                "method": {
-                  "type": "string",
-                  "default": "eth_chainId"
-                },
-                "params": {
-                  "$ref": "#/components/schemas/Pet"
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "default": "54321"
+                  },
+                  "method": {
+                    "type": "string",
+                    "default": "eth_chainId"
+                  },
+                  "params": {
+                    "$ref": "#/components/schemas/Pet"
+                  }
                 }
               }
             }
