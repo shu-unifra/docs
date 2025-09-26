@@ -51,7 +51,19 @@
                   },
                   "params": {
                     "type": "array",
-                    "default": ["latest", true]
+                    "default": ["latest", true],
+                    "prefixItems": [
+                      {
+                        "type": "string",
+                        "example": "latest"
+                      },
+                      {
+                        "type": "boolean",
+                        "example": true
+                      }
+                    ],
+                    "minItems": 2,
+                    "maxItems": 2
                   }
                 }
               }
@@ -70,8 +82,7 @@
             "description": "unexpected error",
             "content": {
               "application/json": {
-                "schema": {
-                }
+                "schema": {}
               }
             }
           }
