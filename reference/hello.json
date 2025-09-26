@@ -19,9 +19,10 @@
     }
   ],
   "paths": {
-    "operationId": "rpcMethodCall",
+    
     "/test": {
       "post": {
+        "operationId": "rpcMethodCall",
         "summary": "Test Tuple Input",
         "requestBody": {
           "required": true,
@@ -58,6 +59,7 @@
     },
     "/{your-api-key}": {
       "post": {
+        "operationId": "rpcMethodCall",
         "summary": "Generic RPC method call",
         "tags": ["pets"],
         "parameters": [
