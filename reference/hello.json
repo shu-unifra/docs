@@ -51,15 +51,16 @@
                   },
                   "params": {
                     "type": "array",
-                    "default": ["latest", true],
                     "prefixItems": [
                       {
                         "type": "string",
-                        "example": "latest"
+                        "example": "latest",
+                        "default": "latest"
                       },
                       {
                         "type": "boolean",
-                        "example": true
+                        "example": true,
+                        "default": true
                       }
                     ],
                     "minItems": 2,
