@@ -52,27 +52,14 @@
                   "params": {
                     "type": "array",
                     "default": [
-                      {
-                        "type": "string",
-                        "example": "latest",
-                        "default": "latest"
-                      },
-                      {
-                        "type": "boolean",
-                        "example": true,
-                        "default": true
-                      }
+                      "latest", true
                     ],
                     "prefixItems": [
                       {
-                        "type": "string",
-                        "example": "latest",
-                        "default": "latest"
+                        "type": "string"
                       },
                       {
-                        "type": "boolean",
-                        "example": true,
-                        "default": true
+                        "type": "boolean"
                       }
                     ],
                     "minItems": 2,
