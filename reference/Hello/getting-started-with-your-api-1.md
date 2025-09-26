@@ -1,5 +1,8 @@
 ---
 title: Getting Started With Your API
+api:
+  file: hello.json
+  operationId: operation1
 excerpt: This page will help you get started with Foo.
 deprecated: false
 hidden: false

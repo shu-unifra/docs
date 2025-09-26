@@ -1,0 +1,100 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Swagger Petstore",
+    "license": {
+      "name": "MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://petstore.swagger.io/v1"
+    }
+  ],
+  "paths": {
+    "/{your-api-key}": {
+      "post": {
+        "summary": "summary",
+        "operationId": "operation1",
+        "tags": ["pets"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "id": {
+                  "type": "string",
+                  "default": "54321"
+                },
+                "method": {
+                  "type": "string",
+                  "default": "eth_chainId"
+                },
+                "params": {
+                  "$ref": "#/components/schemas/Pet"
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Null response"
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Pet": {
+        "type": "array",
+        "prefixItems": [
+          {
+            "type": "string",
+            "description": "区块号或标签 (\"latest\", \"earliest\", \"pending\", or a hex number)",
+            "example": "latest"
+          },
+          {
+            "type": "boolean",
+            "description": "是否返回完整的交易对象",
+            "example": true
+          }
+        ],
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "Pets": {
+        "type": "array",
+        "maxItems": 100,
+        "items": {
+          "$ref": "#/components/schemas/Pet"
+        }
+      },
+      "Error": {
+        "type": "object",
+        "required": ["code", "message"],
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
