@@ -1,0 +1,4 @@
+- eth_estimategas
+- eth_feehistory
+- eth_gasprice
+- eth_maxpriorityfeepergas

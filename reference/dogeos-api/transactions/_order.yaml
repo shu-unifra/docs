@@ -1,0 +1,5 @@
+- eth_gettransactionbyblockhashandindex
+- eth_gettransactionbyhash
+- eth_gettransactioncount
+- eth_gettransactionreceipt
+- eth_sendrawtransaction

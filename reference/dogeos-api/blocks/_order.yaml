@@ -1,0 +1,5 @@
+- eth_blocknumber
+- eth_getblockbyhash
+- eth_getblockbynumber
+- eth_getblocktransactioncountbyhash
+- eth_getblocktransactioncountbynumber
