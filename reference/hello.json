@@ -22,7 +22,7 @@
     
     "/test": {
       "post": {
-        "operationId": "rpcMethodCall",
+        "operationId": "a222",
         "summary": "Test Tuple Input",
         "requestBody": {
           "required": true,
@@ -59,7 +59,7 @@
     },
     "/{your-api-key}": {
       "post": {
-        "operationId": "rpcMethodCall",
+        "operationId": "a111",
         "summary": "Generic RPC method call",
         "tags": ["pets"],
         "parameters": [
