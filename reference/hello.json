@@ -52,7 +52,7 @@
                   "params": {
                     "$ref": "#/components/schemas/Pet",
                    
-                    "example":[
+                    "default":[
                         "latest",
                         true
                     ]
