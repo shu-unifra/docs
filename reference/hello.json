@@ -51,6 +51,9 @@
                   },
                   "params": {
                     "type": "array",
+                    "default":[
+                        
+                    ],
                     "prefixItems": [
                       {
                         "type": "string",
