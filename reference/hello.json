@@ -2,7 +2,7 @@
   "x-readme": {
     "headers": [],
     "explorer-enabled": true,
-    "proxy-enabled": true
+    "proxy-enabled": false
   },
   "x-readme-fauxas": true,
   "openapi": "3.1.0",
@@ -23,14 +23,18 @@
       "post": {
         "summary": "Generic RPC method call",
         "operationId": "rpcMethodCall",
-        "tags": ["pets"],
+        "tags": [
+          "pets"
+        ],
         "parameters": [
           {
             "name": "your-api-key",
             "in": "path",
             "required": true,
             "description": "Your personal API key for authentication.",
-            "schema": { "type": "string" }
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -102,7 +106,10 @@
       },
       "Error": {
         "type": "object",
-        "required": ["code", "message"],
+        "required": [
+          "code",
+          "message"
+        ],
         "properties": {
           "code": {
             "type": "integer",
