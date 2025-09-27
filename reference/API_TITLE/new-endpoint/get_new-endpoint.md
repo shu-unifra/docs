@@ -3,6 +3,6 @@ title: New Endpoint
 excerpt: This is your first endpoint! Edit this page to start documenting your API.
 api:
   file: api-title.json
-  operationId: get_new-endpoint
+  operationId: opid123
 hidden: false
 ---

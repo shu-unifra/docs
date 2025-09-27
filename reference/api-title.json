@@ -15,7 +15,7 @@
       "post": {
         "summary": "New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
-        "operationId": "get_new-endpoint",
+        "operationId": "opid123",
         "requestBody": {
           "content": {
             "application/json": {
