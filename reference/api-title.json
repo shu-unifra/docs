@@ -35,20 +35,24 @@
         "prefixItems": [
           {
             "type": "integer",
+            "default": 0,
             "description": "产品 ID (整数)"
           },
           {
             "type": "string",
-            "description": "产品名称 (字符串)"
+            "description": "产品名称 (字符串)",
+            "default": "Unknown"
           },
           {
             "type": "number",
             "format": "float",
-            "description": "价格 (数字)"
+            "description": "价格 (数字)",
+            "default": 0.0
           },
           {
             "type": "boolean",
-            "description": "是否有库存 (布尔值)"
+            "description": "是否有库存 (布尔值)",
+            "default": true
           }
         ],
         "minItems": 4,
