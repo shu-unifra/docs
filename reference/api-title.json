@@ -47,7 +47,7 @@
     "schemas": {
       "abc": {
         "type": "array",
-        "items": [
+        "anyOf": [
           {
             "type": "string",
             "default": "jjj"
