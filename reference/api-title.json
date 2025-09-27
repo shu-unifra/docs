@@ -37,7 +37,7 @@
           "boolean",
           "object"
         ],
-        "example": [
+        "default": [
           1,
           "top default",
           0.0,
