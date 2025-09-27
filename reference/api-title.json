@@ -31,8 +31,7 @@
     "schemas": {
       "ProductRecord": {
         "type": "array",
-        "example": [1, "Unknown", 0.0, true],
-        "default": [1, "Unknown", 0.0, true],
+        "default": [1, "Unknown", 0.0, true,{"a":"b"}],
         "description": "一个产品记录元组：[ID, Name, Price, InStock]",
         "prefixItems": [
           {
@@ -55,6 +54,9 @@
             "type": "boolean",
             "description": "是否有库存 (布尔值)",
             "default": true
+          },{
+            "type": "object",
+            "description": ".."
           }
         ],
         "minItems": 4,
