@@ -20,7 +20,15 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/abc"
+                "type": "object",
+                "properites": {
+                  "method": {
+                    "type": "string"
+                  },
+                  "params": {
+                    "$ref": "#/components/schemas/abc"
+                  }
+                }
               }
             }
           },
