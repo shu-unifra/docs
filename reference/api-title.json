@@ -24,7 +24,7 @@
                 "properties": {
                   "method": {
                     "type": "string",
-                    "value": "foo"
+                    "const": "foo"
                   },
                   "params": {
                     "$ref": "#/components/schemas/abc"
@@ -47,29 +47,31 @@
     "schemas": {
       "abc": {
         "type": "array",
-        "anyOf": [
-          {
-            "type": "string",
-            "default": "jjj"
-          },
-          {
-            "type": "integer",
-            "default": 123
-          },
-          {
-            "type": "boolean",
-            "default": true
-          },
-          {
-            "type": "object",
-            "properties": {
-              "foo": {
-                "type": "string",
-                "default": "bar"
+        "items": {
+          "anyOf": [
+            {
+              "type": "string",
+              "default": "jjj"
+            },
+            {
+              "type": "integer",
+              "default": 123
+            },
+            {
+              "type": "boolean",
+              "default": true
+            },
+            {
+              "type": "object",
+              "properties": {
+                "foo": {
+                  "type": "string",
+                  "default": "bar"
+                }
               }
             }
-          }
-        ],
+          ]
+        },
         "default": [
           "jjj",
           123,
