@@ -12,10 +12,20 @@
   "tags": [],
   "paths": {
     "/new-endpoint": {
-      "get": {
+      "post": {
         "summary": "New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
         "operationId": "get_new-endpoint",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/abc"
+              }
+            }
+          },
+          "required": true
+        },
         "responses": {
           "200": {
             "description": "Successful response"
