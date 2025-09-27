@@ -46,6 +46,14 @@
     "schemas": {
       "abc": {
         "type": "array",
+        "default":[
+          "kkk",
+          456,
+          true,
+          {
+            "foo": "bar"
+          }
+        ],
         "prefixItems": [
           {
             "type": "string",
