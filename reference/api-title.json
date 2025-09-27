@@ -30,13 +30,15 @@
   "components": {
     "schemas": {
       "ProductRecord": {
-        "type": [
-          "integer",
-          "string",
-          "number",
-          "boolean",
-          "object"
-        ],
+        "items": {
+          "type": [
+            "integer",
+            "string",
+            "number",
+            "boolean",
+            "object"
+          ]
+        },
         "default": [
           1,
           "top default",
