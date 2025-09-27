@@ -30,7 +30,7 @@
   "components": {
     "schemas": {
       "ProductRecord": {
-        "type": "array",
+        "type": ["integer", "string", "number", "boolean","object"],
         "example": [1, "top default", 0.0, true,{"a":"b"}],
         "description": "一个产品记录元组：[ID, Name, Price, InStock]",
         "prefixItems": [
