@@ -30,33 +30,23 @@
   "components": {
     "schemas": {
       "ProductRecord": {
-       
-        "example": [1, "top default", 0.0, true,{"a":"b"}],
-        "description": "一个产品记录元组：[ID, Name, Price, InStock]",
         "type": [
+          "integer",
+          "string",
+          "number",
+          "boolean",
+          "object"
+        ],
+        "example": [
+          1,
+          "top default",
+          0.0,
+          true,
           {
-            "type": "integer",
-            "default": 0,
-            "description": "产品 ID (整数)"
-          },
-          {
-            "type": "string",
-            "description": "产品名称 (字符串)",
-            "default": "Unknown"
-          },
-          {
-            "type": "number",
-            "format": "float",
-            "description": "价格 (数字)"
-          },
-          {
-            "type": "boolean",
-            "description": "是否有库存 (布尔值)"
-          },{
-            "type": "object",
-            "description": ".."
+            "a": "b"
           }
         ],
+        "description": "一个产品记录元组：[ID, Name, Price, InStock]",
         "minItems": 5,
         "maxItems": 5
       }
