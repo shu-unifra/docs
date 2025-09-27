@@ -25,6 +25,34 @@
     }
   },
   "components": {
+    "schemas": {
+      "abc": {
+        "type": "array",
+        "prefixItems": [
+          {
+            "type": "string",
+            "default": "jjj"
+          },
+          {
+            "type": "integer",
+            "default": 123
+          },
+          {
+            "type": "boolean",
+            "default": true
+          },
+          {
+            "type": "object",
+            "properties": {
+              "foo": {
+                "type": "string",
+                "default": "bar"
+              }
+            }
+          }
+        ]
+      }
+    },
     "securitySchemes": {
       "ApiKeyAuth": {
         "type": "apiKey",
