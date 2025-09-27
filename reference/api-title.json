@@ -24,7 +24,7 @@
                 "properties": {
                   "method": {
                     "type": "string",
-                    "const":"hello"
+                    "value":"foo"
                   },
                   "params": {
                     "$ref": "#/components/schemas/abc"
