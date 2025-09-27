@@ -5,27 +5,7 @@
     "version": "1.0.0"
   },
   "paths": {
-    "/products": {
-      "post": {
-        "operationId": "createProductRecord",
-        "summary": "Create a new product record",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ProductRecord"
-              }
-            }
-          }
-        },
-        "responses": {
-          "201": {
-            "description": "Product record created"
-          }
-        }
-      }
-    }
+    "/products": {}
   },
   "components": {
     "schemas": {
@@ -42,7 +22,7 @@
         "default": [
           1,
           "top default",
-          0.0,
+          0,
           true,
           {
             "a": "b"
