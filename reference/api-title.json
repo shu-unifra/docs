@@ -71,26 +71,11 @@
           }
         ],
         "default": [
+          "jjj",
+          123,
+          true,
           {
-            "type": "string",
-            "default": "jjj"
-          },
-          {
-            "type": "integer",
-            "default": 123
-          },
-          {
-            "type": "boolean",
-            "default": true
-          },
-          {
-            "type": "object",
-            "properties": {
-              "foo": {
-                "type": "string",
-                "default": "bar"
-              }
-            }
+            "foo": "bar"
           }
         ]
       }
