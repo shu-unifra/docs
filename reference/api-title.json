@@ -24,7 +24,7 @@
                 "properties": {
                   "method": {
                     "type": "string",
-                    "value":"foo"
+                    "value": "foo"
                   },
                   "params": {
                     "$ref": "#/components/schemas/abc"
@@ -70,12 +70,27 @@
             }
           }
         ],
-        "example": [
-          "kkk",
-          456,
-          true,
+        "default": [
           {
-            "foo": "bar"
+            "type": "string",
+            "default": "jjj"
+          },
+          {
+            "type": "integer",
+            "default": 123
+          },
+          {
+            "type": "boolean",
+            "default": true
+          },
+          {
+            "type": "object",
+            "properties": {
+              "foo": {
+                "type": "string",
+                "default": "bar"
+              }
+            }
           }
         ]
       }
