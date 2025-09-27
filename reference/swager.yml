@@ -1,33 +1,6 @@
-swagger: '2.0'
+openapi: 3.0.0
 info:
   title: API with Legacy Array
   version: 1.0.0
 paths:
-  /test:
-    post:
-      summary: Sends a mixed-type array
-      consumes:
-        - application/json
-      parameters:
-        - in: body
-          name: body
-          required: true
-          schema:
-            type: object
-            properties:
-              params:
-                type: array
-                description: |-
-                  This array must contain a specific sequence of types:
-                  1. First item: A string
-                  2. Second item: An integer
-                  3. Third item: A boolean
-                example:
-                  - example string
-                  - 123
-                  - true
-                  - a: b
-                items: {}
-      responses:
-        '200':
-          description: OK
+  /test: {}
