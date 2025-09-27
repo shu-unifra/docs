@@ -1,43 +1,26 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "version": "1.0.0",
-    "title": "API_TITLE"
+    "title": "prefixItems Example API",
+    "version": "1.0.0"
   },
-  "servers": [
-    {
-      "url": "https://dogeos-testnet.unifra.io/v1/"
-    }
-  ],
-  "tags": [],
   "paths": {
-    "/new-endpoint": {
+    "/products": {
       "post": {
-        "summary": "New Endpoint",
-        "description": "This is your first endpoint! Edit this page to start documenting your API.",
-        "operationId": "opid123",
+        "summary": "Create a new product record",
         "requestBody": {
+          "required": true,
           "content": {
             "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "method": {
-                    "type": "string",
-                    "const": "foo"
-                  },
-                  "params": {
-                    "$ref": "#/components/schemas/abc"
-                  }
-                }
+                "$ref": "#/components/schemas/ProductRecord"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
-          "200": {
-            "description": "Successful response"
+          "201": {
+            "description": "Product record created"
           }
         }
       }
@@ -45,53 +28,31 @@
   },
   "components": {
     "schemas": {
-      "abc": {
+      "ProductRecord": {
         "type": "array",
-        "items": {
-          "anyOf": [
-            {
-              "type": "string",
-              "default": "jjj"
-            },
-            {
-              "type": "integer",
-              "default": 123
-            },
-            {
-              "type": "boolean",
-              "default": true
-            },
-            {
-              "type": "object",
-              "properties": {
-                "foo": {
-                  "type": "string",
-                  "default": "bar"
-                }
-              }
-            }
-          ]
-        },
-        "default": [
-          "jjj",
-          123,
-          true,
+        "description": "一个产品记录元组：[ID, Name, Price, InStock]",
+        "prefixItems": [
           {
-            "foo": "bar"
+            "type": "integer",
+            "description": "产品 ID (整数)"
+          },
+          {
+            "type": "string",
+            "description": "产品名称 (字符串)"
+          },
+          {
+            "type": "number",
+            "format": "float",
+            "description": "价格 (数字)"
+          },
+          {
+            "type": "boolean",
+            "description": "是否有库存 (布尔值)"
           }
-        ]
-      }
-    },
-    "securitySchemes": {
-      "ApiKeyAuth": {
-        "type": "apiKey",
-        "in": "query",
-        "name": "your-api-key"
+        ],
+        "minItems": 4,
+        "maxItems": 4
       }
     }
-  },
-  "x-readme": {
-    "explorer-enabled": true,
-    "proxy-enabled": true
   }
 }
