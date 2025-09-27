@@ -1,7 +1,0 @@
-- eth_getfilterchanges
-- eth_getfilterlogs
-- eth_getlogs
-- eth_newblockfilter
-- eth_newfilter
-- eth_newpendingtransactionfilter
-- eth_uninstallfilter

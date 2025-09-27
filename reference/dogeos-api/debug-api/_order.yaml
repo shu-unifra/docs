@@ -1,6 +1,0 @@
-- debug_getrawreceipts
-- debug_traceblockbyhash
-- debug_traceblockbynumber
-- debug_tracecall
-- debug_tracecallmany
-- debug_tracetransaction
