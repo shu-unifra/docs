@@ -31,7 +31,7 @@
     "schemas": {
       "ProductRecord": {
         "type": "array",
-        "defualt": [1, "Unknown", 0.0, true],
+        "example": [1, "Unknown", 0.0, true],
         "description": "一个产品记录元组：[ID, Name, Price, InStock]",
         "prefixItems": [
           {
